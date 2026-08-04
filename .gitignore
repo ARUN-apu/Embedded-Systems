@@ -1,0 +1,35 @@
+# Build artifacts
+Debug/
+Release/
+build/
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+
+# STM32CubeIDE / Eclipse
+.metadata/
+.settings/
+*.launch
+
+# Keil
+*.uvguix*
+*.uvoptx
+Objects/
+Listings/
+
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp

@@ -1,14 +1,16 @@
 #include <stdio.h>
 
-int main(){
+int main() {
     int x, y;
-    printf("Please Enter Two number you want to add: \n");
+    printf("Please Enter Two numbers you want to add: \n");
     scanf("%d %d", &x, &y);
-
-    while(y != 0){
-        x++;
-        y--;
+    
+    while (y != 0) {
+        int carry = x & y; 
+        x = x ^ y;        
+        y = carry << 1;   
     }
-    printf("Some of Two Numbers without Using  + operator is: %d \n", x);
+    
+    printf("Sum of Two Numbers without Using + operator is: %d \n", x);
     return 0;
 }
